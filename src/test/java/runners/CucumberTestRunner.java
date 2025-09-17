@@ -11,7 +11,7 @@ import org.junit.platform.suite.api.Suite;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features") // looks under classpath: features => src/test/resources/features
 @ConfigurationParameter(key = Constants.GLUE_PROPERTY_NAME,
-        value = "com.example.reqres.steps,com.example.reqres")
+        value = "steps")
 @ConfigurationParameter(key = Constants.PLUGIN_PROPERTY_NAME,
         value = "pretty, summary, html:target/cucumber.html, json:target/cucumber.json")
 public class CucumberTestRunner { }
